@@ -60,7 +60,7 @@ export async function handler(chatUpdate) {
 				if (!("BannedReason" in user)) user.BannedReason = ""
 				if (!("Banneduser" in user)) user.Banneduser = false
 				if (!("afkReason" in user)) user.afkReason = ""
-				if (!("autolevelup" in user)) user.autolevelup = true
+				if (!("autolevelup" in user)) user.autolevelup = false
 				if (!("banned" in user)) user.banned = false
 				if (!("catatan" in user)) user.catatan = ""
 				if (!("job" in user)) user.job = ""
@@ -367,6 +367,12 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.mana)) user.mana = 0
 				if (!isNumber(user.mangga)) user.mangga = 0
 				if (!isNumber(user.money)) user.money = 0
+				if (!isNumber(user.chip)) user.chip = 0
+				if (!isNumber(user.dana)) user.dana = 0
+                if (!isNumber(user.ovo)) user.ovo = 0
+                if (!isNumber(user.gopay)) user.gopay = 0
+                if (!isNumber(user.shopeepay)) user.shopeepay = 0
+                if (!isNumber(user.paypal)) user.paypal = 0
 				if (!isNumber(user.monyet)) user.monyet = 0
 				if (!isNumber(user.mythic)) user.mythic = 0
 				if (!isNumber(user.naga)) user.naga = 0
@@ -483,7 +489,6 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.wood)) user.wood = 0
 				if (!isNumber(user.wortel)) user.wortel = 0
 				
-				//NEW ITEM
 				if (!isNumber(user.cactus)) user.cactus = 0
                 if (!isNumber(user.herb)) user.herb = 0
 				if (!isNumber(user.pinetree)) user.pinetree = 0
@@ -520,12 +525,6 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.cokelat)) user.cokelat = 0
 				if (!isNumber(user.popcorn)) user.popcorn = 0
 				if (!isNumber(user.cookies)) user.cookies = 0
-				
-				if (!isNumber(user.dana)) user.dana = 0
-                if (!isNumber(user.ovo)) user.ovo = 0
-                if (!isNumber(user.gopay)) user.gopay = 0
-                if (!isNumber(user.shopeepay)) user.shopeepay = 0
-                if (!isNumber(user.paypal)) user.paypal = 0
 
 				if (!user.lbars) user.lbars = "[▒▒▒▒▒▒▒▒▒]"
 				if (!user.job) user.job = "Pengangguran"
@@ -566,7 +565,7 @@ export async function handler(chatUpdate) {
 					armormonster: 0,
 					as: 0,
 					atm: 0,
-					autolevelup: true,
+					autolevelup: false,
 					axe: 0,
 					axedurability: 0,
 					ayam: 0,
@@ -806,6 +805,48 @@ export async function handler(chatUpdate) {
 					mangga: 0,
 					misi: "",
 					money: 0,
+					chip: 0,
+					dana:0,
+					ovo: 0,
+					gopay: 0,
+					shopeepay: 0,
+					paypal: 0,
+					cactus: 0,
+                    herb: 0,
+                    pinetree: 0,
+                    palm: 0,
+                    clover: 0,
+                    acorn: 0,
+                    mushroom: 0,
+                    wheat: 0,
+                    kentang: 0,
+                    burger: 0,
+                    pizza: 0,
+                    spaghetti: 0,
+                    ramen: 0,
+                    steak: 0,
+                    sandwich: 0,
+                    kebab: 0,
+                    paella: 0,
+                    tacos: 0,
+                    ratatouille: 0,
+                    croissant: 0,
+                    baguette: 0,
+                    macaron: 0,
+                    bacon: 0,
+
+                    vodka: 0,
+                    wine: 0,
+                    coffee: 0,
+                    matcha: 0,
+                    kelp: 0,
+                    boba: 0,
+
+                    candy: 0,
+                    lolipop: 0,
+                    cokelat: 0,
+                    popcorn: 0,
+                    cookies: 0,
 					monyet: 0,
 					mythic: 0,
 					naga: 0,
@@ -927,47 +968,6 @@ export async function handler(chatUpdate) {
 					wood: 0,
 					wortel: 0,
 					limitjoin: 0,
-					dana:0,
-					ovo: 0,
-					gopay: 0,
-					shopeepay: 0,
-					paypal: 0,
-					cactus: 0,
-                    herb: 0,
-                    pinetree: 0,
-                    palm: 0,
-                    clover: 0,
-                    acorn: 0,
-                    mushroom: 0,
-                    wheat: 0,
-                    kentang: 0,
-                    burger: 0,
-                    pizza: 0,
-                    spaghetti: 0,
-                    ramen: 0,
-                    steak: 0,
-                    sandwich: 0,
-                    kebab: 0,
-                    paella: 0,
-                    tacos: 0,
-                    ratatouille: 0,
-                    croissant: 0,
-                    baguette: 0,
-                    macaron: 0,
-                    bacon: 0,
-
-                    vodka: 0,
-                    wine: 0,
-                    coffee: 0,
-                    matcha: 0,
-                    kelp: 0,
-                    boba: 0,
-
-                    candy: 0,
-                    lolipop: 0,
-                    cokelat: 0,
-                    popcorn: 0,
-                    cookies: 0,
 				}
 			let chat = global.db.data.chats[m.chat]
 			if (typeof chat !== 'object')
@@ -1020,7 +1020,7 @@ export async function handler(chatUpdate) {
 				if (!('antiVideo' in chat))
 					chat.antiVideo = false
 				if (!('antiPorn' in chat))
-					chat.antiPorn = false
+					chat.antiPorn = true
 				if (!('viewonce' in chat))
 					chat.viewonce = false
 				if (!('antiVirtex' in chat))
@@ -1069,7 +1069,7 @@ export async function handler(chatUpdate) {
 					antiAudio: false,
 					antiAcara: false,
 					antiDoc: false,
-					antiPorn: false,
+					antiPorn: true,
 					antiSticker: false,
 					viewonce: false,
 					antiToxic: false,
@@ -1091,7 +1091,7 @@ export async function handler(chatUpdate) {
 				if (!('autoread' in settings)) settings.autoread = true
 				if (!('composing' in settings)) settings.composing = false
 				if (!('restrict' in settings)) settings.restrict = true
-				if (!('autorestart' in settings)) settings.autorestart = true
+				if (!('autorestart' in settings)) settings.autorestart = false
 				if (!isNumber(settings.restartDB)) settings.restartDB = 0
 				if (!('backup' in settings)) settings.backup = false
 				if (!isNumber(settings.backupDB)) settings.backupDB = 0
@@ -1100,14 +1100,14 @@ export async function handler(chatUpdate) {
 				if (!('cleartmp' in settings)) settings.cleartmp = true
 				if (!isNumber(settings.lastcleartmp)) settings.lastcleartmp = 0
 				if (!isNumber(settings.status)) settings.status = 0
-				if (!('anticall' in settings)) settings.anticall = false
+				if (!('anticall' in settings)) settings.anticall = true
 				if (!('toko' in settings)) settings.toko = true
 			} else global.db.data.settings[this.user.jid] = {
 				self: false,
 				autoread: true,
 				composing: false,
 				restrict: true,
-				autorestart: true,
+				autorestart: false,
 				restartDB: 0,
 				backup: false,
 				backupDB: 0,
@@ -1116,7 +1116,7 @@ export async function handler(chatUpdate) {
 				cleartmp: true,
 				lastcleartmp: 0,
 				status: 0,
-				anticall: false,
+				anticall: true,
 				toko: true,
 			}
 		} catch (e) {
@@ -1329,12 +1329,23 @@ export async function handler(chatUpdate) {
 				}
 				m.isCommand = true
 				let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
-				if (xp > 200)
+				if (xp > 50)
 					m.reply('Ngecit -_-') // Hehehe
 				else
 					m.exp += xp
 				if (!isPrems && plugin.limit && _user.limit < plugin.limit * 1) {
-					m.reply(global.pricelist)
+					this.relayMessage(m.chat, {
+						liveLocationMessage: {
+							degreesLatitude: 42.923901,
+							degreesLongitude: 143.196106,
+							accuracyInMeters: 0,
+							degreesClockwiseFromMagneticNorth: 2,
+							caption: global.pricelist,
+							sequenceNumber: 2,
+							timeOffset: 3,
+							contextInfo: m,
+						}
+					}, {})
 					continue
 				}
 				if (plugin.level > _user.level) {

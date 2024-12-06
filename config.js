@@ -29,10 +29,10 @@ global.APIKeys = {
 global.info = {
 	nomorbot: '62857059457516',
 	nomorown: '33189313251',
-	namebot: 'Astrospace MD',
+	namebot: 'Nexora MD',
 	nameown: 'ManzzFR',
-	channel: '0@newsletter',
-	namechannel: 'Astrobot | Whatsapp Bots'
+	channel: '120363232705577205@newsletter',
+	namechannel: 'Nexora MD | Whatsapp Bots'
 }
 
 
@@ -42,27 +42,27 @@ global.info = {
 global.owner = ['33189313251'] // Ganti pakai nomor kalian
 global.xmaze = ['33189313251'] // Ganti pakai nomor kalian
 
-global.mods = ['33189313251'] // Opsional boleh ganti atau tidak 
-global.prems = ['33189313251', '19419318284'] // Opsional boleh ganti atau tidak 
+global.mods = ['19419318284', '33189313251' // Opsional boleh ganti atau tidak 
+global.prems = ['19419318284', '33189313251'] // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== WATERMARK ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.wm = 'Astrospace Ai' // Opsional boleh ganti atau tidak 
+global.wm = 'NEXORA AI' // Opsional boleh ganti atau tidak 
 global.author = 'ManzzFR' // Opsional boleh ganti atau tidak 
-global.stickpack = 'Created by' // Opsional boleh ganti atau tidak 
-global.stickauth = 'WhatsApp Bot\nWa: +62 857 0594 57516' // Opsional boleh ganti atau tidak 
+global.stickpack = 'Made by' // Opsional boleh ganti atau tidak 
+global.stickauth = 'WhatsApp Sticker' // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== TEXT & IMAGE ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.nameown = 'MamzzFR' // Ganti jadi nama kalian
+global.nameown = 'ManzzFR' // Ganti jadi nama kalian
 global.waown = 'wa.me/33189313251' // ganti nomor tanpa menghilangkan wa.me/
-global.mail = 'astro.bot@gmail.com' // boleh taruh email kalian
-global.fb = 'https://facebook.com/' // boleh taruh link fb kalian
-global.ig = 'https://instagram.com/' // boleh taruh link ig kalian
+global.mail = 'google@gmail.com' // boleh taruh email kalian
+global.fb = 'https://facebook.com' // boleh taruh link fb kalian
+global.ig = 'https://instagram.com' // boleh taruh link ig kalian
 global.gcbot = 'https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851' // boleh taruh link group kalian
 global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
 global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
@@ -96,13 +96,13 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpaper/publicmenus.json'
-global.multiplier = 38
-global.wait = '*Lagi diproses . . .*'
-global.eror = '*Proses gagal*\n_Sepertinya Fitur Sedang Error!_'
+global.multiplier = 1000
+global.wait = '*Bentar, Lagi diproses . . .*'
+global.eror = '*Proses Gagal . . .*\nSepertinya fitur sedang Error !'
 global.maxwarn = '2'
 global.browser = [ "Ubuntu", "Chrome", "20.0.04" ]
 global.tutorjb = 'https://pomf2.lain.la/f/acdva5pa.jpg'
-global.pricelist = '*LIMIT* kamu habis. kamu bisa order akses premium\n\n*PREMIUM USER PRICE LIST*\n\n*3 Day premium*\n- Harga: Rp. 5.000 IDR\n- ID Pesanan: 3day\n\n*7 Day premium*\n- Harga: Rp. 10.000 IDR\n- ID Pesanan: 7day\n\n*30 Day premium*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: 30day\n\n*60 Day premium*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: 60day\n\n\n*Example:* .premium <ID Pembayaran>\n*Example:* .premium 30day'
+global.pricelist = '*LIMIT* kamu habis. kamu bisa order akses premium\n\n*PREMIUM USER PRICE LIST*\n\n*3 Day premium*\n- Harga: Rp. 1.000 IDR\n- ID Pesanan: 3day\n\n*7 Day premium*\n- Harga: Rp. 3.000 IDR\n- ID Pesanan: 7day\n\n*30 Day premium*\n- Harga: Rp. 5.000 IDR\n- ID Pesanan: 30day\n\n*60 Day premium*\n- Harga: Rp. 10.000 IDR\n- ID Pesanan: 60day\n\n\n*Example:* .premium <ID Pembayaran>\n*Example:* .premium 30day'
 
 
 
@@ -430,31 +430,31 @@ global.rpg = {
             umpan: '🪱',
             skata: '🧩',
             kentang: '🍟',
-            burger: '🍔',
-            pizza: '🍕',
-            spaghetti: '🍝',
-            ramen: '🍜',
-            steak: '🥩',
-            sandwich: '🥪',
-            kebab: '🌯',
-            paella: '🫓',
-            tacos: '🌮',
-            ratatouille: '🥐',
-            croissant: '🥐',
-            baguette: '🥖',
-            macaron: '🍲',
-            bacon: '🥓',
-            vodka: '🥂',
-            wine: '🍷',
-            coffe: '☕',
-            matcha: '🍵',
-            kelp: '🧃',
-            boba: '🧋',
-            candy: '🍬',
-            lolipop: '🍭',
-            cokelat: '🍫',
-            popcorn: '🍿',
-            cookies: '🍪'
+        burger: '🍔',
+        pizza: '🍕',
+        spaghetti: '🍝',
+        ramen: '🍜',
+        steak: '🥩',
+        sandwich: '🥪',
+        kebab: '🌯',
+        paella: '🫓',
+        tacos: '🌮',
+        ratatouille: '🥐',
+        croissant: '🥐',
+        baguette: '🥖',
+        macaron: '🍲',
+        bacon: '🥓'
+        vodka: '🥂',
+        wine: '🍷',
+        coffe: '☕',
+        matcha: '🍵',
+        kelp: '🧃',
+        boba: '🧋'
+        candy: '🍬',
+        lolipop: '🍭',
+        cokelat: '🍫',
+        popcorn: '🍿',
+        cookies: '🍪'
         }
         let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
         if (!results.length) return ''
