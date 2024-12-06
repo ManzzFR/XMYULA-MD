@@ -28,11 +28,11 @@ ${rpg.emoticon('bibitapel')} BibitApel: ${apel}`: ''}
 `.trim()
     if (new Date - user.lastberkebon > 1800000) {
         if (user.bibitpisang >= 100 && user.bibitanggur >= 100 && user.bibitmangga >= 100 && user.bibitapel >= 100 && user.bibitjeruk >= 100) {
-            let hasil1 = Math.floor(Math.random() * 100)
-            let hasil2 = Math.floor(Math.random() * 100)
-            let hasil3 = Math.floor(Math.random() * 100)
-            let hasil4 = Math.floor(Math.random() * 100)
-            let hasil5 = Math.floor(Math.random() * 100)
+            let hasil1 = Math.floor(Math.random() * 7000)
+            let hasil2 = Math.floor(Math.random() * 7000)
+            let hasil3 = Math.floor(Math.random() * 7000)
+            let hasil4 = Math.floor(Math.random() * 7000)
+            let hasil5 = Math.floor(Math.random() * 7000)
 
             let caption = `⌛ Hasil Panen Kamu
 

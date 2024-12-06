@@ -13,18 +13,18 @@ let handler = async (m, { conn }) => {
         throw false
     }
     if (new Date - user.lastmisi > 3600000) {
-		let hewan1 = Math.floor(Math.random() * 10)
-		let hewan2 = Math.floor(Math.random() * 10)
-		let hewan3 = Math.floor(Math.random() * 10)
-		let hewan4 = Math.floor(Math.random() * 10)
-		let hewan5 = Math.floor(Math.random() * 10)
-		let hewan6 = Math.floor(Math.random() * 10)
-		let hewan7 = Math.floor(Math.random() * 10)
-		let hewan8 = Math.floor(Math.random() * 10)
-		let hewan9 = Math.floor(Math.random() * 10)
-		let hewan10 = Math.floor(Math.random() * 10)
-		let hewan11 = Math.floor(Math.random() * 10)
-		let hewan12 = Math.floor(Math.random() * 10)
+		let hewan1 = Math.floor(Math.random() * 100)
+		let hewan2 = Math.floor(Math.random() * 100)
+		let hewan3 = Math.floor(Math.random() * 100)
+		let hewan4 = Math.floor(Math.random() * 100)
+		let hewan5 = Math.floor(Math.random() * 100)
+		let hewan6 = Math.floor(Math.random() * 100)
+		let hewan7 = Math.floor(Math.random() * 100)
+		let hewan8 = Math.floor(Math.random() * 100)
+		let hewan9 = Math.floor(Math.random() * 100)
+		let hewan10 = Math.floor(Math.random() * 100)
+		let hewan11 = Math.floor(Math.random() * 100)
+		let hewan12 = Math.floor(Math.random() * 100)
 		
 		let hsl = `🕸 *Hasil Berburu ${user.registered ? user.name : conn.getName(m.sender)}* 
 ${hewan1 ? `

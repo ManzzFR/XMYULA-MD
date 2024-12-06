@@ -9,8 +9,8 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
     let moneyDulu = user[type] * 1
     let txt = (m.msg && m.msg.selectedDisplayText ? m.msg.selectedDisplayText: m.text ? m.text: '').toLowerCase()
     try {
-        let Bot = (Math.ceil(Math.random() * 91)) * 1
-        let Kamu = (Math.floor(Math.random() * 71)) * 1
+        let Bot = (Math.ceil(Math.random() * 50)) * 1
+        let Kamu = (Math.floor(Math.random() * 69)) * 1
         let status = 'Kalah'
         if (Bot < Kamu) {
             user[type] += count * 1

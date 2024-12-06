@@ -58,7 +58,7 @@ const defaultMenu = {
   header: '*┌ •「 %category  」*',
   body: '*│ •* %cmd',
   footer: '*└* ',
-  after: 'ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴅɪꜱᴄᴜꜱꜱɪᴏɴ',
+  after: '',
 }
 
 //"https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true",."https://github.com/Neder11ndeu/Music2/blob/main/Yula%20intro.mp3?raw=true"
@@ -169,10 +169,10 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-conn.sendFile(m.chat, vn, "ehee.mp3", null, m, true, {
-type: "audioMessage",
-ptt: true,
-});
+//conn.sendFile(m.chat, vn, "ehee.mp3", null, m, true, {
+//type: "audioMessage",
+//ptt: true,
+//});
 /*conn.sendMessage(m.chat, { video: { url: "https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true" }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text, contextInfo: { mentionedJid: [m.sender], externalAdReply: { showAdAttribution: false, title: global.info.namebot + `© 2024`, body: 'Jangan Lupa Sewa', thumbnailUrl: 'https://telegra.ph/file/7689cc923faef69aa9772.jpg', mediaType: 1, sourceUrl: 'https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8', renderLargerThumbnail: false }}}, { quoted: m })*/
 conn.sendMessage(m.chat, { video:
             { url: thumvid },

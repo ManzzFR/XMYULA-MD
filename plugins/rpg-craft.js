@@ -7,16 +7,6 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let user = global.db.data.users[m.sender]
 
   let caption = `
-█▀▀▀▀█▀▀▀▀█▀▀▀▀█
-█────█────█────█
-█▄▄▄▄█▄▄▄▄█▄▄▄▄█
-█▀▀▀▀█▀▀▀▀█▀▀▀▀█
-█────█────█────█
-█▄▄▄▄█▄▄▄▄█▄▄▄▄█
-█▀▀▀▀█▀▀▀▀█▀▀▀▀█
-█────█────█────█
-█▄▄▄▄█▄▄▄▄█▄▄▄▄█
-
 Gunakan Format *${usedPrefix}${command} [type]*
 contoh *${usedPrefix}${command} pickaxe*
 
@@ -29,17 +19,17 @@ contoh *${usedPrefix}${command} pickaxe*
 
 *乂 Recipe*
 ▧ Pickaxe ⛏️
-〉 10 Kayu
-〉 5 Batu
+〉 10 wood
+〉 5 rock
 〉 5 Iron
 〉 20 String
 
 ▧ Sword ⚔️
-〉 10 Kayu
+〉 10 wood
 〉 15 Iron
 
 ▧ Fishingrod 🎣
-〉 10 Kayu
+〉 10 wood
 〉 2 Iron
 〉 20 String
 
@@ -59,7 +49,7 @@ contoh *${usedPrefix}${command} pickaxe*
         switch (type) {
           case 'pickaxe':
           if (user.pickaxe > 0) return m.reply('Kamu sudah memilik ini')
-            if(user.rock < 5 || user.wood < 10 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pickaxe. Kamu memerlukan : ${user.wood < 10 ? `\n${10 - user.wood} kayu🪵` : ''} ${user.iron < 5 ? `\n${5 - user.iron} iron⛓` : ''}${user.string < 20 ? `\n${20 - user.string} String🕸️` : ''}${user.rock < 5 ? `\n${5 - user.rock} Batu 🪨` : ''}`)
+            if(user.rock < 5 || user.wood < 10 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pickaxe. Kamu memerlukan : ${user.wood < 10 ? `\n${10 - user.wood} wood🪵` : ''} ${user.iron < 5 ? `\n${5 - user.iron} iron⛓` : ''}${user.string < 20 ? `\n${20 - user.string} String🕸️` : ''}${user.rock < 5 ? `\n${5 - user.rock} rock 🪨` : ''}`)
             user.wood -= 10
             user.iron -= 5
             user.rock -= 5
@@ -70,7 +60,7 @@ contoh *${usedPrefix}${command} pickaxe*
             break
           case 'sword':
           if (user.sword > 0) return m.reply('Kamu sudah memilik ini')
-            if(user.wood < 10 || user.iron < 15) return m.reply(`Barang tidak cukup!\nUntuk membuat sword. Kamu memerlukan :${user.wood < 10 ? `\n${10 - user.wood} kayu🪵` : ''}${user.iron < 15 ? `\n${15 - user.iron} iron⛓️` : ''}`)
+            if(user.wood < 10 || user.iron < 15) return m.reply(`Barang tidak cukup!\nUntuk membuat sword. Kamu memerlukan :${user.wood < 10 ? `\n${10 - user.wood} wood🪵` : ''}${user.iron < 15 ? `\n${15 - user.iron} iron⛓️` : ''}`)
             user.wood -= 10
             user.iron -= 15
             user.sword += 1
@@ -79,7 +69,7 @@ contoh *${usedPrefix}${command} pickaxe*
             break
           case 'fishingrod':
           if (user.fishingrod > 0) return m.reply('Kamu sudah memilik ini')
-            if(user.wood < 20 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pancingan. Kamu memerlukan :${user.wood < 20 ? `\n${20 - user.wood} kayu🪵` : ''}${user.iron < 5 ? `\n${5 - user.iron} iron⛓` : ''}${user.string < 20 ? `\n${20 - user.string} String🕸️` : ''}`)
+            if(user.wood < 20 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pancingan. Kamu memerlukan :${user.wood < 20 ? `\n${20 - user.wood} wood🪵` : ''}${user.iron < 5 ? `\n${5 - user.iron} iron⛓` : ''}${user.string < 20 ? `\n${20 - user.string} String🕸️` : ''}`)
             user.wood -= 10
             user.iron -= 2
             user.string -= 20
@@ -104,7 +94,7 @@ contoh *${usedPrefix}${command} pickaxe*
             user.money -= 10000
             user.diamond -= 6
             user.atm += 1
-            user.fullatm = 500000000
+            user.fullatm = 50000000000000000000000000
             m.reply("Sukses membuat 1 Atm 💳")
             break
 

@@ -8,7 +8,7 @@ let handler = async (m, { usedPrefix }) => {
         let kt = await ke.json()
         let user = global.db.data.users[m.sender]
         let timers = (cooldown - (new Date - user.lastadventure))
-        if (user.health < 80) return m.reply(`ʏᴏᴜʀ ʜᴇᴀʟᴛʜ ɪs ʙᴇʟᴏᴡ 80﹗\nᴩʟᴇᴀsᴇ ʜᴇᴀʟ ❤ ғɪʀsᴛ ᴛᴏ ᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀɢᴀɪɴ.`)
+        if (user.health < 80) return m.reply(`ʏᴏᴜʀ ʜᴇᴀʟᴛʜ ɪs ʙᴇʟᴏᴡ 80﹗\nᴩʟᴇᴀsᴇ .ʜᴇᴀʟ ❤ ғɪʀsᴛ ᴛᴏ ᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀɢᴀɪɴ.`)
         if (new Date - user.lastadventure <= cooldown) return m.reply(`ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ *ᴀᴅᴠᴇɴᴛᴜʀᴇ*, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ ᴛɪʟʟ ᴄᴏᴏʟᴅᴏᴡɴ ғɪɴɪsʜ.
 
 ⏱️ ${timers.toTimeString()}`)
@@ -76,7 +76,7 @@ ${decor.menua}`
 }
 handler.help = ['adventure']
 handler.tags = ['rpg']
-handler.command = /^(adventure)$/i
+handler.command = /^(adventure|adv)$/i
 
 handler.register = true
 handler.group = true
@@ -87,22 +87,22 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            money: 1027,
-            exp: 9251,
-            trash: 101,
-            potion: 2,
-            rock: 2,
-            wood: 2,
-            string: 2,
-            common: [91, 5, 34, 56, 12],
-            uncommon: [5, 1, 18, 1, 3],
-            mythic: [9, 0, 4, 0, 0, 1, 0, 2, 0],
-            legendary: [0, 3, 0, 0, 5, 0, 0, 1, 0, 9],
-            emerald: [0, 1, 0, 0, 0],
-            pet: [0, 1, 0, 0, 0],
-            iron: [0, 0, 0, 1, 0, 0],
-            gold: [0, 0, 0, 0, 0, 1, 0],
-            diamond: [9, 4, 0, 0, 1, 0, 1, 0],
+            money: 199999,
+            exp: 6000,
+            trash: 7800,
+            potion: 2000,
+            rock: 500
+            wood: 455,
+            string: 288,
+            common: [91, 85, 34, 56, 72],
+            uncommon: [5, 19, 18, 81, 93],
+            mythic: [9, 90, 4, 0, 90, 1, 80, 2, 0],
+            legendary: [0, 3, 90, 80, 5, 60, 0, 1, 0, 9],
+            emerald: [70, 71, 0, 0, 0],
+            pet: [0, 71, 70, 70, 0],
+            iron: [80, 80, 0, 81, 0, 0],
+            gold: [80, 80, 0, 80, 80, 1, 0],
+            diamond: [9, 4, 80, 0, 81, 0, 1, 0],
         },
         lost: {
             health: 101 - [8, 10, 11, 1],

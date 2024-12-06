@@ -9,23 +9,32 @@ const { generateWAMessageFromContent, proto } = (await import('@adiwajshing/bail
 
 const defaultMenu = {
   before: `
-*「 I N F O  B O T 」*
- •  *Your Premium :* %prems
- •  *Your Limits :* %limit
- •  *Versions :* %version
- •  *Today's request :* %totalreg 
- •  *Database :* mongoDB
+  *D A S H B O A R D*
+  
+┌  *U S E R - I N F O*
+┊👤  *User Premium :* %prems
+┊⏳  *Limits :* %limit
+└┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+┌  *S T A T I S T I C S - B O T*
+┊🔖 *Bot Name :* Astro MD
+┊🎐 *Type :* Plugins
+┊📮 *TotalFitur :* 600+
+┊📑  *Version :* %version
+┊📈  *Hit Today :* %totalreg 
+┊📊  *Database :* mongoDB
+└┄┄┄┄┄┄┄┄┄┄┄┄┄
 
 %readmore
 `.trimStart(),
-  header: '*┌ •「 %category  」*',
-  body: '*│ •* %cmd',
-  footer: '*└* ',
-  after: 'ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴅɪꜱᴄᴜꜱꜱɪᴏɴ',
+  header: '┌┄ *%category*',
+  body: '┊▨  %cmd',
+  footer: '└┄┄┄┄┄┄┄┄┄┄┄\n',
+  after: '',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'fun': '𝙵𝚄𝙽 𝙵𝙴𝙰𝚃𝚄𝚁𝙴',
+'fun': 'FUN FEATURES',
 }
  
   try {
@@ -184,7 +193,7 @@ let tags = {
 conn.sendMessage(m.chat, {
             text: text,
             contextInfo: {
-                forwardingScore: 1,
+                forwardingScore: 100,
                 isForwarded: true,
                    forwardedNewsletterMessageInfo: {
                    newsletterJid: global.info.channel,
@@ -193,9 +202,9 @@ conn.sendMessage(m.chat, {
                    },
                    externalAdReply: {
                    title: global.info.namebot + `© 2024`,
-                   body: 'Powered By Maximus',
+                   body: 'Powered By ー Mαnzz',
                    thumbnailUrl: global.maximus ? global.maximus : thum,
-                   sourceUrl: pickRandom(["https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8","https://chat.whatsapp.com/EWxOwlaJXTsIhj706JsfmZ"]),
+                   sourceUrl: pickRandom(["https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851","https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851"]),
                    mediaType: 1,
                    renderLargerThumbnail: true
                    },

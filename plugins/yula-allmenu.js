@@ -26,11 +26,7 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'maximus': '𝚂𝙸𝙼𝙿𝙻𝙴 𝙼𝙴𝙽𝚄',
-'genshin': '𝙶𝙴𝙽𝚂𝙷𝙸𝙽 𝙼𝙴𝙽𝚄',
-'hsr': '𝙷𝚂𝚁 𝙼𝙴𝙽𝚄',
-'adminry': '𝙰𝙳𝙼𝙸𝙽 𝙼𝙴𝙽𝚄',
-'store': '𝚂𝚃𝙾𝚁𝙴 𝙼𝙴𝙽𝚄',
+'maximus': 'LIST MENU',
 }
  
   try {
@@ -199,9 +195,9 @@ conn.sendMessage(m.chat, {
                    },
                    externalAdReply: {
                    title: global.info.namebot + `© 2024`,
-                   body: 'Powered By Maximus',
+                   body: 'Powered By ManzzFR',
                    thumbnailUrl: global.maximus ? global.maximus : thum,
-                   sourceUrl: pickRandom(["https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8","https://chat.whatsapp.com/EWxOwlaJXTsIhj706JsfmZ"]),
+                   sourceUrl: pickRandom(["https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851","https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851"]),
                    mediaType: 1,
                    renderLargerThumbnail: true
                    },

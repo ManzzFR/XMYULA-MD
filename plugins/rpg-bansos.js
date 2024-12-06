@@ -5,15 +5,15 @@ let handler = async (m, { conn, command }) => {
     let __timers = (new Date - user.lastbansos)
     let _timers = (3600000 - __timers) 
     let timers = clockString(_timers)
-    if (user.money < 3000000) return m.reply(`Uang Anda Harus Diatas 3Juta Untuk Menggunakan Command Ini`)
+    if (user.money < 3000000) return m.reply(`ᴍᴏɴᴇʏ ᴀɴᴅᴀ ʜᴀʀᴜs ᴅɪᴀᴛᴀs 3 ᴊᴜᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴋᴏʀᴜᴘsɪ ʙᴀɴsᴏs`)
     if (new Date - user.lastbansos > 300000) {
       if (randomaku > randomkamu) {
-        conn.sendFile(m.chat, 'https://telegra.ph/file/afcf9a7f4e713591080b5.jpg', 'korupsi.jpg', `Kamu Tertangkap Setelah Kamu korupsi dana bansos🕴️💰,  Dan Kamu harus membayar denda 3 Juta rupiah💵`, m)
-        user.money -= 3000000
+        conn.sendFile(m.chat, 'https://telegra.ph/file/afcf9a7f4e713591080b5.jpg', 'korupsi.jpg', `Kamu Tertangkap Setelah Kamu korupsi dana bansos🕴️💰,  Dan Kamu harus membayar denda 5 Juta 💵`, m)
+        user.money -= 5000000
         user.lastbansos = new Date * 1
       } else if (randomaku < randomkamu) {
-        user.money += 3000000
-        conn.sendFile(m.chat, 'https://telegra.ph/file/d31fcc46b09ce7bf236a7.jpg', 'korupsi.jpg', `Kamu berhasil  korupsi dana bansos🕴️💰,  Dan Kamu mendapatkan 3 Juta rupiah💵`, m)
+        user.money += 1000000000000
+        conn.sendFile(m.chat, 'https://telegra.ph/file/d31fcc46b09ce7bf236a7.jpg', 'korupsi.jpg', `Kamu berhasil  korupsi dana bansos🕴️💰,  Dan Kamu mendapatkan 1 TRILIUM Money 💵`, m)
         user.lastbansos = new Date * 1
       } else {
         m.reply(`Sorry Gan Lu g Berhasil Korupsi bansos Dan Tidak masuk penjara karna Kamu *melarikan diri🏃* ${wm}`)

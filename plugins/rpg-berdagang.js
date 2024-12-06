@@ -21,31 +21,31 @@ let handler = async (m, { conn, text }) => {
   global.db.data.users[m.sender].lastdagang = new Date * 1
   m.reply(`Mohon tunggu kak..\nKamu dan @${who.replace(/@.+/, '')} sedang berdagang.. ðŸ˜…\n\nKamu dan @${who.replace(/@.+/, '')} meletakkan modal -${dapat} ðŸ˜…`)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 3600000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 7200000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 10800000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 14400000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 18000000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 21600000)
   setTimeout(() => {
-					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +50000\n${users[m.sender].money += 50000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +50000\n${users[who].money += 50000} Money @${who.replace(/@.+/, '')}`, m, {
+					conn.reply(m.chat, `Selamat kamu dan @${who.replace(/@.+/, '')} mendapatkan money..\n\nPenghasilan dagang kamu didapatkan +7000000\n${users[m.sender].money += 7000000} Money kamu\n\nPenghasilan dagang @${who.replace(/@.+/, '')} didapatkan +7000000\n${users[who].money += 7000000} Money @${who.replace(/@.+/, '')}`, m, {
 contextInfo: { mentionedJid: [m.sender, who] }})
 					}, 25200000)
   setTimeout(() => {
