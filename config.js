@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url'
 
 /*========= GLOBAL APIKEY =========*/
 // ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
-global.btc = 'Enter your apikey' // apikey Botchax
-global.lann = 'Enter your apikey' // apikey Beta
+global.btc = '69vzKwyC' // apikey Botchax
+global.lann = 'cqRwjbUP' // apikey Beta
 
 
 
@@ -18,8 +18,8 @@ global.APIs = {
 } 
 
 global.APIKeys = {
-  'https://api.betabotz.eu.org': 'Enter your apikey',
-  'https://api.botcahx.eu.org': 'Enter your apikey'
+  'https://api.betabotz.eu.org': 'cqRwjbUP',
+  'https://api.botcahx.eu.org': '69vzKwyC'
 }
 
 
@@ -27,43 +27,43 @@ global.APIKeys = {
 /*============ NOMOR ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.info = {
-	nomorbot: '62882257504889',
-	nomorown: '6281283516246',
-	namebot: 'Assisten YuLa',
-	nameown: 'Maximus Store',
-	channel: '120363241570452835@newsletter',
-	namechannel: 'XM4ZE | Whatsapp Bots'
+	nomorbot: '62857059457516',
+	nomorown: '33189313251',
+	namebot: 'Astrospace MD',
+	nameown: 'ManzzFR',
+	channel: '0@newsletter',
+	namechannel: 'Astrobot | Whatsapp Bots'
 }
 
 
 
 /*============ OWNER ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.owner = ['6281283516246'] // Ganti pakai nomor kalian
-global.xmaze = ['6281283516246'] // Ganti pakai nomor kalian
+global.owner = ['33189313251'] // Ganti pakai nomor kalian
+global.xmaze = ['33189313251'] // Ganti pakai nomor kalian
 
-global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
-global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
+global.mods = ['33189313251'] // Opsional boleh ganti atau tidak 
+global.prems = ['33189313251', '19419318284'] // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== WATERMARK ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.wm = 'XMYULA' // Opsional boleh ganti atau tidak 
-global.author = 'XM4ZE' // Opsional boleh ganti atau tidak 
-global.stickpack = 'XMYULA' // Opsional boleh ganti atau tidak 
-global.stickauth = 'XM4ZE' // Opsional boleh ganti atau tidak 
+global.wm = 'Astrospace Ai' // Opsional boleh ganti atau tidak 
+global.author = 'ManzzFR' // Opsional boleh ganti atau tidak 
+global.stickpack = 'Created by' // Opsional boleh ganti atau tidak 
+global.stickauth = 'WhatsApp Bot\nWa: +62 857 0594 57516' // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== TEXT & IMAGE ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.nameown = 'Maximus Store' // Ganti jadi nama kalian
-global.waown = 'wa.me/6281283516246' // ganti nomor tanpa menghilangkan wa.me/
-global.mail = 'maximusstoreindonesia@gmail.com' // boleh taruh email kalian
-global.fb = 'https://facebook.com/maximusstoreindonesia' // boleh taruh link fb kalian
-global.ig = 'https://instagram.com/maximusstore.id' // boleh taruh link ig kalian
-global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M' // boleh taruh link group kalian
+global.nameown = 'MamzzFR' // Ganti jadi nama kalian
+global.waown = 'wa.me/33189313251' // ganti nomor tanpa menghilangkan wa.me/
+global.mail = 'astro.bot@gmail.com' // boleh taruh email kalian
+global.fb = 'https://facebook.com/' // boleh taruh link fb kalian
+global.ig = 'https://instagram.com/' // boleh taruh link ig kalian
+global.gcbot = 'https://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851' // boleh taruh link group kalian
 global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
 global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
 
@@ -97,8 +97,8 @@ function pickRandom(list) {
 }
 global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpaper/publicmenus.json'
 global.multiplier = 38
-global.wait = '*Starting Processing . . .*'
-global.eror = '*Failed to process . . .*'
+global.wait = '*Lagi diproses . . .*'
+global.eror = '*Proses gagal*\n_Sepertinya Fitur Sedang Error!_'
 global.maxwarn = '2'
 global.browser = [ "Ubuntu", "Chrome", "20.0.04" ]
 global.tutorjb = 'https://pomf2.lain.la/f/acdva5pa.jpg'
@@ -428,7 +428,33 @@ global.rpg = {
             gelas: '🧋',
             chip: '♋',
             umpan: '🪱',
-            skata: '🧩'
+            skata: '🧩',
+            kentang: '🍟',
+            burger: '🍔',
+            pizza: '🍕',
+            spaghetti: '🍝',
+            ramen: '🍜',
+            steak: '🥩',
+            sandwich: '🥪',
+            kebab: '🌯',
+            paella: '🫓',
+            tacos: '🌮',
+            ratatouille: '🥐',
+            croissant: '🥐',
+            baguette: '🥖',
+            macaron: '🍲',
+            bacon: '🥓',
+            vodka: '🥂',
+            wine: '🍷',
+            coffe: '☕',
+            matcha: '🍵',
+            kelp: '🧃',
+            boba: '🧋',
+            candy: '🍬',
+            lolipop: '🍭',
+            cokelat: '🍫',
+            popcorn: '🍿',
+            cookies: '🍪'
         }
         let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
         if (!results.length) return ''

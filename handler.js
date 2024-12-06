@@ -60,7 +60,7 @@ export async function handler(chatUpdate) {
 				if (!("BannedReason" in user)) user.BannedReason = ""
 				if (!("Banneduser" in user)) user.Banneduser = false
 				if (!("afkReason" in user)) user.afkReason = ""
-				if (!("autolevelup" in user)) user.autolevelup = false
+				if (!("autolevelup" in user)) user.autolevelup = true
 				if (!("banned" in user)) user.banned = false
 				if (!("catatan" in user)) user.catatan = ""
 				if (!("job" in user)) user.job = ""
@@ -482,6 +482,50 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0
 				if (!isNumber(user.wood)) user.wood = 0
 				if (!isNumber(user.wortel)) user.wortel = 0
+				
+				//NEW ITEM
+				if (!isNumber(user.cactus)) user.cactus = 0
+                if (!isNumber(user.herb)) user.herb = 0
+				if (!isNumber(user.pinetree)) user.pinetree = 0
+				if (!isNumber(user.palm)) user.palm = 0
+				if (!isNumber(user.clover)) user.clover = 0
+				if (!isNumber(user.acorn)) user.acorn = 0
+				if (!isNumber(user.mushroom)) user.mushroom = 0
+				if (!isNumber(user.wheat)) user.wheat = 0
+
+				if (!isNumber(user.kentang)) user.kentang = 0
+				if (!isNumber(user.burger)) user.burger = 0
+				if (!isNumber(user.pizza)) user.pizza = 0
+				if (!isNumber(user.spaghetti)) user.spaghetti = 0
+				if (!isNumber(user.ramen)) user.ramen = 0
+                if (!isNumber(user.steak)) user.steak = 0
+                if (!isNumber(user.sandwich)) user.sandwich = 0
+	 			if (!isNumber(user.kebab)) user.kebab = 0
+				if (!isNumber(user.paella)) user.paella = 0
+				if (!isNumber(user.tacos)) user.tacos = 0
+				if (!isNumber(user.ratatouille)) user.ratatouille = 0
+				if (!isNumber(user.croissant)) user.croissant = 0
+				if (!isNumber(user.baguette)) user.baguette = 0
+				if (!isNumber(user.macaron)) user.macaron = 0
+				if (!isNumber(user.bacon)) user.bacon = 0
+				
+				if (!isNumber(user.wine)) user.wine = 0
+				if (!isNumber(user.coffee)) user.coffee = 0
+				if (!isNumber(user.matcha)) user.matcha = 0
+				if (!isNumber(user.kelp)) user.kelp = 0
+				if (!isNumber(user.boba)) user.boba = 0
+
+				if (!isNumber(user.candy)) user.candy = 0
+				if (!isNumber(user.lolipop)) user.lolipop = 0
+				if (!isNumber(user.cokelat)) user.cokelat = 0
+				if (!isNumber(user.popcorn)) user.popcorn = 0
+				if (!isNumber(user.cookies)) user.cookies = 0
+				
+				if (!isNumber(user.dana)) user.dana = 0
+                if (!isNumber(user.ovo)) user.ovo = 0
+                if (!isNumber(user.gopay)) user.gopay = 0
+                if (!isNumber(user.shopeepay)) user.shopeepay = 0
+                if (!isNumber(user.paypal)) user.paypal = 0
 
 				if (!user.lbars) user.lbars = "[▒▒▒▒▒▒▒▒▒]"
 				if (!user.job) user.job = "Pengangguran"
@@ -522,7 +566,7 @@ export async function handler(chatUpdate) {
 					armormonster: 0,
 					as: 0,
 					atm: 0,
-					autolevelup: false,
+					autolevelup: true,
 					axe: 0,
 					axedurability: 0,
 					ayam: 0,
@@ -883,6 +927,47 @@ export async function handler(chatUpdate) {
 					wood: 0,
 					wortel: 0,
 					limitjoin: 0,
+					dana:0,
+					ovo: 0,
+					gopay: 0,
+					shopeepay: 0,
+					paypal: 0,
+					cactus: 0,
+                    herb: 0,
+                    pinetree: 0,
+                    palm: 0,
+                    clover: 0,
+                    acorn: 0,
+                    mushroom: 0,
+                    wheat: 0,
+                    kentang: 0,
+                    burger: 0,
+                    pizza: 0,
+                    spaghetti: 0,
+                    ramen: 0,
+                    steak: 0,
+                    sandwich: 0,
+                    kebab: 0,
+                    paella: 0,
+                    tacos: 0,
+                    ratatouille: 0,
+                    croissant: 0,
+                    baguette: 0,
+                    macaron: 0,
+                    bacon: 0,
+
+                    vodka: 0,
+                    wine: 0,
+                    coffee: 0,
+                    matcha: 0,
+                    kelp: 0,
+                    boba: 0,
+
+                    candy: 0,
+                    lolipop: 0,
+                    cokelat: 0,
+                    popcorn: 0,
+                    cookies: 0,
 				}
 			let chat = global.db.data.chats[m.chat]
 			if (typeof chat !== 'object')
@@ -891,7 +976,7 @@ export async function handler(chatUpdate) {
 				if (!('isBanned' in chat))
 					chat.isBanned = false
 				if (!('welcome' in chat))
-					chat.welcome = false
+					chat.welcome = true
 				if (!('detect' in chat))
 					chat.detect = false
 				if (!('sWelcome' in chat))
@@ -911,7 +996,7 @@ export async function handler(chatUpdate) {
 				if (!('listStr' in chat))
 					chat.listStr = {}
 				if (!('delete' in chat))
-					chat.delete = true
+					chat.delete = false
 			    if (!('antiAudio' in chat))
 					chat.antiAudio = false
 				if (!('antiAcara' in chat))
@@ -949,21 +1034,21 @@ export async function handler(chatUpdate) {
 				if (!('nsfw' in chat))
 					chat.nsfw = false
 				if (!('rpg' in chat))
-					chat.rpg = false
+					chat.rpg = true
 				if (!('game' in chat))
-					chat.game = false
+					chat.game = true
 				if (!('xmaze' in chat))
-					chat.xmaze = true
+					chat.xmaze = false
 				if (!('teks' in chat))
 					chat.teks = false
 				if (!('autolevelup' in chat))
-					chat.autolevelup = false
+					chat.autolevelup = true
 				if (!isNumber(chat.expired))
 					chat.expired = 0
 			} else
 				global.db.data.chats[m.chat] = {
 					isBanned: false,
-					welcome: false,
+					welcome: true,
 					detect: false,
 					sWelcome: '',
 					sBye: '',
@@ -973,7 +1058,7 @@ export async function handler(chatUpdate) {
 					closeTime: '',
 					ocStatus: false,
 					listStr: {},
-					delete: true,
+					delete: false,
 					antiLinkkick: false,
 					antiLinkdelete: false,
 					pembatasan: false,
@@ -992,11 +1077,11 @@ export async function handler(chatUpdate) {
 					antiBadword: false,
 					simi: false,
 					nsfw: false,
-					rpg: false,
-					game: false,
-					xmaze: true,
+					rpg: true,
+					game: true,
+					xmaze: false,
 					teks: false,
-					autolevelup: false,
+					autolevelup: true,
 					expired: 0,
 				}
 			let settings = global.db.data.settings[this.user.jid]
@@ -1010,12 +1095,12 @@ export async function handler(chatUpdate) {
 				if (!isNumber(settings.restartDB)) settings.restartDB = 0
 				if (!('backup' in settings)) settings.backup = false
 				if (!isNumber(settings.backupDB)) settings.backupDB = 0
-				if (!('resetlimit' in settings)) settings.resetlimit = false
+				if (!('resetlimit' in settings)) settings.resetlimit = true
 				if (!isNumber(settings.resetlimitDB)) settings.resetlimitDB = 0
-				if (!('cleartmp' in settings)) settings.cleartmp = false
+				if (!('cleartmp' in settings)) settings.cleartmp = true
 				if (!isNumber(settings.lastcleartmp)) settings.lastcleartmp = 0
 				if (!isNumber(settings.status)) settings.status = 0
-				if (!('anticall' in settings)) settings.anticall = true
+				if (!('anticall' in settings)) settings.anticall = false
 				if (!('toko' in settings)) settings.toko = true
 			} else global.db.data.settings[this.user.jid] = {
 				self: false,
@@ -1026,12 +1111,12 @@ export async function handler(chatUpdate) {
 				restartDB: 0,
 				backup: false,
 				backupDB: 0,
-				resetlimit: false,
+				resetlimit: true,
 				resetlimitDB: 0,
-				cleartmp: false,
+				cleartmp: true,
 				lastcleartmp: 0,
 				status: 0,
-				anticall: true,
+				anticall: false,
 				toko: true,
 			}
 		} catch (e) {
@@ -1486,16 +1571,11 @@ export async function deleteUpdate(message) {
 		if (!msg)
 			return
 		let chat = global.db.data.chats[msg.chat] || {}
-		if (chat.delete)
-			return
-		await this.reply(msg.chat, `
-⧻Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
-Untuk mematikan fitur ini, Admin harus mengetik 
-*.disable antidelete*
-`.trim(), msg, {
-			mentions: [participant]
-		})
-		this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+		
+		// Pastikan pengaturan delete pada chat selalu false
+		chat.delete = false
+
+		// Tidak ada lagi pemberitahuan atau pengiriman ulang pesan
 	} catch (e) {
 		console.error(e)
 	}
@@ -1503,24 +1583,34 @@ Untuk mematikan fitur ini, Admin harus mengetik
 
 global.dfail = (type, m, conn) => {
 	let msg = {
-		rowner: 'This command is for *R-OWNER* Only',
-		owner: 'This command is for *OWNER* Only',
-		mods: 'This command is for *MODS* Only',
-		premium: 'This command is for *PREMIUM* Only\n\n> Please send *.order* to purchase the *Premium* plan',
-		group: 'This command is for *GROUP* Only',
-		private: 'This command is for *PRIVATE* Only',
-		admin: 'This command is for *ADMINS* Only',
-		botAdmin: 'This command is for *BOT-ADMINS* Only',
+		rowner: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴏᴡɴᴇʀ-ʙᴏᴛ*',
+		owner: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴏᴡɴᴇʀ-ʙᴏᴛ*',
+		mods: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴍᴏᴅᴇʀᴀᴛᴏʀ-ʙᴏᴛ*',
+		premium: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴘᴇɴɢɢᴜɴᴀ *ᴘʀᴇᴍɪᴜᴍ*',
+		group: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ ᴅᴀʟᴀᴍ *ɢʀᴜᴘ*',
+		private: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅɪ *ᴄʜᴀᴛ ᴘʀɪʙᴀᴅɪ ʙᴏᴛ*',
+		admin: 'ғɪᴛᴜʀ ɪɴɪ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ *ᴀᴅᴍɪɴ ɢʀᴜᴘ*',
+		botAdmin: '*ʙᴏᴛ* ʜᴀʀᴜs ʙᴇʀsᴛᴀᴛᴜs *ᴀᴅᴍɪɴ* ᴀɢᴀʀ ғɪᴛᴜʀ ᴅᴀᴘᴀᴛ ᴅɪ ᴀᴋsᴇs',
 		onlyprem: 'This command is for *PREMIUM* Only',
-		nsfw: 'This Command Has Not Been Activated In This Group.\n\n> Enable This Feature By Writing *.enable nsfw*',
-		rpg: 'This Command Has Not Been Activated In This Group.\n\n> Enable This Feature By Writing *.enable rpg*',
-		game: 'This Command Has Not Been Activated In This Group.\n\n> Enable This Feature By Writing *.enable game*',
-		xmaze: 'This group does not allow this feature to be used. please join this group:\nhttps://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s\n\n disable this feature by writing .enable allfitur',
-		restrict: '*FEATURES TURNED OFF BY OWNERS*',
-		unreg: '*Please register first by writing \`#register name.age\`*\n* Once you are registered, then you can use this command.\n\n*Registration example:*\n\n\`#register Mulyono.45\`\n\n*Notes:*\n* Make sure you write your name and age correctly.\n* You only need to register once.'
+		nsfw: 'ғɪᴛᴜʀ ɪɴɪ ʙᴇʟᴜᴍ ᴅɪᴀᴋᴛɪғᴋᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ. ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ *ᴀᴅᴍɪɴ* ʜᴀʀᴜs ᴍᴇɴɢᴇᴛɪᴋ *.ᴏɴ ɴsғᴡ* ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ',
+		rpg: 'ғɪᴛᴜʀ ɪɴɪ ʙᴇʟᴜᴍ ᴅɪᴀᴋᴛɪғᴋᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ. ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ *ᴀᴅᴍɪɴ* ʜᴀʀᴜs ᴍᴇɴɢᴇᴛɪᴋ *.ᴏɴ ʀᴘɢ* ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ',
+		game: 'ғɪᴛᴜʀ ɪɴɪ ʙᴇʟᴜᴍ ᴅɪᴀᴋᴛɪғᴋᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ. ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ *ᴀᴅᴍɪɴ* ʜᴀʀᴜs ᴍᴇɴɢᴇᴛɪᴋ *.ᴏɴ ɢᴀᴍᴇ* ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ',
+		xmaze: 'This group does not allow this feature to be used. please join this group:\nhttps://chat.whatsapp.com/Gtcectx7SUcAy21Rk4s851\n\n disable this feature by writing .enable allfitur',
+		restrict: `*FEATURES TURNED OFF BY OWNERS*',
+		unreg: 'ʜᴀʟᴏ ᴋᴀᴋ..
+sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ, ᴋᴀᴍᴜ ʜᴀʀᴜs ᴛᴇʀᴅᴀғᴛᴀʀ ᴅɪ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴀɢᴀʀ ɪɴғᴏʀᴍᴀsɪ ʟɪᴍɪᴛ ᴋᴀᴍᴜ ᴀᴋᴛɪғ.
+
+*ᴄᴀʀᴀ ᴅᴀғᴛᴀʀ*
+*_ᴠᴇʀsɪ ᴍᴀɴᴜᴀʟ :_*
+.ᴅᴀғᴛᴀʀ ɴᴀᴍᴀ.ᴜᴍᴜʀ
+*_ᴄᴏɴᴛᴏʜ:_*
+.daftar astrobot.20
+
+_*ᴠᴇʀsɪ ᴏᴛᴏᴍᴀᴛɪs :*_
+ʜᴀɴʏᴀ ᴘᴇʀʟᴜ ᴋᴇᴛɪᴋ @verify`
 	} [type]
 
-	if (msg) return m.reply('\`ACCESS DENIED\`\n\n' + msg)
+	if (msg) return m.reply('\`ᴀᴋsᴇs ʙᴇʟᴜᴍ ᴅɪ ɪᴢɪɴᴋᴀɴ - ʙᴀᴄᴀ ɪɴsᴛʀᴜᴋsɪ ᴅɪʙᴀᴡᴀʜ !\`\n\n' + msg)
 }
 
 let file = global.__filename(import.meta.url, true)
